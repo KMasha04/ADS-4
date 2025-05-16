@@ -34,14 +34,14 @@ int cbinsearch(int *arr, int size, int value) {
     } else if (arr[middle] > value) {
       high = middle - 1;
     } else {
-      count ++;
+      count ++ ;
       int now = middle - 1;
       middle++;
       while (arr[middle] == value) {
         middle++;
         count++;
       }
-      while (arr[now] == value){
+      while (arr[now] == value) {
         now--;
         count++;
       }
